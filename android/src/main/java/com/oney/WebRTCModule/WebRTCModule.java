@@ -126,6 +126,7 @@ public class WebRTCModule extends ReactContextBaseJavaModule {
         mFactory
             = PeerConnectionFactory.builder()
                 .setAudioDeviceModule(adm)
+                .setUseStereoOutput(true)
                 .setVideoEncoderFactory(encoderFactory)
                 .setVideoDecoderFactory(decoderFactory)
                 .createPeerConnectionFactory();
